@@ -1,9 +1,13 @@
+/* Color Palette */
 :root {
     --brown: #a48279;
     --ltgreen: #bdbc81;
     --pink: #e9c9c9;
-    --dkgreen: #296138;
-    --mauve: #937086;
+    --dkgreen: #59564a;
+    --mauve: #80616e;
+    --taupe: #d6c2a3;
+    --violet: #b79fad;
+    --oldlace: #Fdf7e8;
 }
 
 * {
@@ -23,20 +27,21 @@ header {
     justify-content: space-evenly;
     align-items: center;
     padding: 30px 0px;
-    background-color: thistle;
-    color: var(--mauve);
+    background-color: var(--dkgreen);
 }
 
 h1 {
     padding: 30px 0px;
-    background-color: var(--pink);
+    background-color: var(--ltgreen);
 }
+
 h1 span {
     padding-left: 30px;
+    font-weight: bolder;
 }
 
 nav {
-    width: 66.66%
+    width: 50%
 }
 
 nav ul {
@@ -50,26 +55,28 @@ nav ul {
 
 nav li {
     padding: 0px 10px;
+
 }
 
 nav a {
-    /* color: white; */
     text-align: center;
     text-decoration: none;
+    font-size: 20px;
     padding: 20px;
-    /* padding: 0px 20px 10px; */
+    color: var(--ltgreen);
     border-bottom-style: solid;
-    border-botton-width: 4px;
-    border-bottom-color: var(--mauve);
+    border-bottom-width: 4px;
+    border-bottom-color: var(--ltgreen);
 }
 
 nav a:hover {
-    background-color: var(--pink);
+    background-color: var(--ltgreen);
+    color: var(--dkgreen);
 }
 
 main {
     padding: 30px;
-    background-color: var(--pink);
+    background-color: var(--oldlace);
 }
 
 section {
@@ -92,7 +99,7 @@ section h2 {
 section p {
     display: inline-block;
     width: 75%;
-    padding: 20px 20px;
+    padding: 10px 10px;
 }
 
 section div {
@@ -113,22 +120,21 @@ section li {
     padding: 0px 0px 4px 0px;
     border-bottom-style: solid;
     border-botton-width: 4px;
-    border-bottom-color: var(--mauve);
+    border-bottom-color: var(--brown);
 }
 
 footer {
     padding: 2em;
-    background-color: thistle;
-    color:  var(--dkgreen);
+    background-color: var(--dkgreen);
 }
 
 #header-title {
-    width: 33.33%;
+    width: 50%;
     position: relative;
 }
 
 .hero {
-    height: 10em;
+    height: 15em;
 }
 
 .project-container {
@@ -140,18 +146,18 @@ footer {
 }
 
 .project-img {
-    background-color: darkgray;
+    background-color: var(--pink);
     margin: 10px 10px 10px 0px;
 }
 
 .project-img-large {
     width: 100%;
     height: 25em;
-    border: 4px solid white;
+    border: 6px solid var(--violet);
 }
 
 .project-img-small {
     width: 48%;
     height: 10em;
-    border: 4px solid white;
+    border: 6px solid var(--violet);
 }
