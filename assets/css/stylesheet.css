@@ -2,7 +2,7 @@
     --brown: #a48279;
     --ltgreen: #bdbc81;
     --pink: #e9c9c9;
-    --dkgreen: #8a8d61;
+    --dkgreen: #296138;
     --mauve: #937086;
 }
 
@@ -10,7 +10,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: var(--brown);
+    color: var(--dkgreen);
 }
 
 body {
@@ -21,20 +21,18 @@ body {
 header {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
-    padding: 30px;
-    background-color: var(--ltgreen);
+    align-items: center;
+    padding: 30px 0px;
+    background-color: thistle;
     color: var(--mauve);
 }
 
 h1 {
-    margin: 0;
-    /* background-color:darkblue;
-    position: relative;
-    left: -30px;
-    top: 10px;
-    text-indent: 30px;
-    padding: 20px 30px 20px 0px; */
+    padding: 30px 0px;
+    background-color: var(--pink);
+}
+h1 span {
+    padding-left: 30px;
 }
 
 nav {
@@ -58,10 +56,15 @@ nav a {
     /* color: white; */
     text-align: center;
     text-decoration: none;
-    padding: 0px 20px 10px;
+    padding: 20px;
+    /* padding: 0px 20px 10px; */
     border-bottom-style: solid;
     border-botton-width: 4px;
     border-bottom-color: var(--mauve);
+}
+
+nav a:hover {
+    background-color: var(--pink);
 }
 
 main {
@@ -114,22 +117,15 @@ section li {
 }
 
 footer {
-    padding: 1em;
-    background-color: var(--ltgreen);
-    color:  var(--mauve);
+    padding: 2em;
+    background-color: thistle;
+    color:  var(--dkgreen);
 }
 
-.header-title{
+#header-title {
     width: 33.33%;
+    position: relative;
 }
-
-/* .header-h1-highlight {
-    height: 60px;
-    background-color: yellow;
-    position:relative;
-    left: -30px;
-    top: 10px;
-} */
 
 .hero {
     height: 10em;
