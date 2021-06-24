@@ -1,4 +1,5 @@
-/* Color Palette */
+/* COLOR PALETTE AND PAGE STYLE*/
+
 :root {
     --brown: #a48279;
     --ltgreen: #bdbc81;
@@ -8,71 +9,75 @@
     --taupe: #d6c2a3;
     --violet: #b79fad;
     --oldlace: #Fdf7e8;
+    --newbrown: #775957;
+
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: var(--dkgreen);
+    line-height: 1.5;
 }
+
+/* ELEMENT FORMATTING */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    color: var(--dkgreen)
 }
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
-    background-color: var(--dkgreen);
+    background-color: var(--newbrown);
 }
 
 h1 {
     padding: 30px 0px;
-    background-color: var(--ltgreen);
+    background-color: var(--oldlace);
 }
 
-h1 span {
-    padding-left: 30px;
-    font-weight: bolder;
-}
+    h1 span {
+        padding-left: 30px;
+    }
 
 nav {
-    width: 50%
+    width: 50%;
 }
 
-nav ul {
-    margin: 20px;
-    list-style: none;
-    float:right;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    nav ul {
+        margin: 20px;
+        list-style: none;
+        float:right;
+        display:flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
 
-nav li {
-    padding: 0px 10px;
+    nav li {
+        padding: 0px 10px;
 
-}
+    }
 
-nav a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
-    color: var(--ltgreen);
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-    border-bottom-color: var(--ltgreen);
-}
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px;
+        color: var(--oldlace);
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        border-bottom-color: var(--oldlace);
+    }
 
-nav a:hover {
-    background-color: var(--ltgreen);
-    color: var(--dkgreen);
-}
+    nav a:hover {
+        background-color: var(--ltgreen);
+        color: var(--dkgreen);
+    }
 
 main {
     padding: 30px;
@@ -86,61 +91,70 @@ section {
     flex-wrap: wrap;
 }
 
-section h2 {
-    display: inline-block;
-    text-align: right;
-    width: 25%;
-    padding: 20px 20px;
-    border-right-style: solid;
-    border-right-color: var(--brown);
-    border-right-width: 4px;
-}
+    section h2 {
+        display: inline-block;
+        text-align: right;
+        width: 25%;
+        padding: 20px 20px;
+        border-right-style: solid;
+        border-right-color: var(--brown);
+        border-right-width: 4px;
+    }
 
-section p {
-    display: inline-block;
-    width: 75%;
-    padding: 10px 10px;
-}
+    section div {
+        display: inline-block;
+        width: 75%;
+        padding: 10px 20px;
+    }
 
-section div {
-    display: inline-block;
-    width: 75%;
-    padding: 20px 20px;
-}
-section ul {
-    list-style-type: none;
-    width: 75%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
-
-section li {
-    padding: 0px 0px 4px 0px;
-    border-bottom-style: solid;
-    border-botton-width: 4px;
-    border-bottom-color: var(--brown);
-}
+    section a {
+        text-decoration: none;
+        color: var(--dkgreen);
+    }
 
 footer {
     padding: 2em;
-    background-color: var(--dkgreen);
+    background-color: var(--newbrown);
+    text-align: center;
+    color: var(--oldlace);
 }
 
-#header-title {
+
+/* OBJECT FORMATTING */
+
+
+.header-title {
     width: 50%;
     position: relative;
 }
 
 .hero {
     height: 15em;
+    overflow: hidden;
+    position: relative;
+}
+
+.subtitle {
+    height: 75px;
+    width: 300px;
+    background-color: var(--brown);
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 75px;
+    color:var(--oldlace)
+}
+
+.paragraph-block {
+    display: inline-block;
+    width: 75%;
 }
 
 .project-container {
     width: 75%;
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -148,16 +162,131 @@ footer {
 .project-img {
     background-color: var(--pink);
     margin: 10px 10px 10px 0px;
+    border: 6px solid var(--brown);
+    height: 20em;
+    position: relative;
+    z-index: 1;
+}
+
+.project-img:hover {
+    /* opacity: .5; */
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .project-img-large {
     width: 100%;
-    height: 25em;
-    border: 6px solid var(--violet);
 }
 
 .project-img-small {
     width: 48%;
-    height: 10em;
-    border: 6px solid var(--violet);
 }
+
+.project-img img{
+    max-width: 100%;
+    max-height:100%;
+}
+
+.image {
+    /* margin:0;
+    height:1400px;
+    width: 810px;
+    object-fit: fill; */
+}
+
+.image:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.project-title-box {
+    padding: 5px;
+    height: 4em;
+    width: 200px;
+    position: absolute;
+    left: -1px;
+    bottom: 50px;
+    z-index: 2;
+    text-align: center;
+    line-height: 1em;
+    background-color: var(--brown);
+    color:var(--oldlace)
+}
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-me ul {
+    list-style-type: none;
+    width: 75%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-me ul li {
+    padding: 0px 0px 4px 0px;
+    border-bottom: 4px solid var(--brown);
+}
+
+.contact-me ul li a {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+
+@media only screen and (max-width: 926px) {
+    nav ul {
+        margin: 20px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        }
+    
+        nav li {
+            padding: 15px;
+        }
+    
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px;
+            color: var(--oldlace);
+        }
+    }
+
+@media only screen and (max-width: 795px) {
+    .project-img-small {
+        width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 540px) {
+    main {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        padding: 20px 5px;
+    }
+
+    .project-img-small {
+        width: 100%;
+    }
+
+    .contact-me ul {
+        list-style-type: none;
+        padding: 10px;
+        width: 75%;
+        display:flex;
+        flex-direction: column;
+    }
+}  
