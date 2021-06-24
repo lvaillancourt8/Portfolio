@@ -2,7 +2,7 @@
 My portfolio of web development projects.
 
 # Deployed Application Link
-
+https://lvaillancourt8.github.io/Portfolio/
 
 # Description
 

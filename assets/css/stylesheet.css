@@ -216,6 +216,33 @@ footer {
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 
 
+@media only screen and (max-width: 1006px) {
+    nav ul {
+        margin: 20px;
+        list-style: none;
+        float:right;
+        display:flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+
+    nav li {
+        padding: 0px 10px;
+
+    }
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 5px;
+        color: var(--oldlace);
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        border-bottom-color: var(--oldlace);
+    }
+}
+
 @media only screen and (max-width: 926px) {
     nav ul {
         margin: 20px;
@@ -252,10 +279,6 @@ footer {
     section h2 {
         font-size: 20px;
         padding: 20px 5px;
-    }
-
-    .project-img-small {
-        width: 100%;
     }
 
     .contact-me ul {
